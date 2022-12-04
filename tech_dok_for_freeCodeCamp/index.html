@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technikal documentation </title>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <main id="main-doc">
+        <div class="menu">
+            <nav id="navbar">
+                <header class="navbar-header">Python Tutorial </header>
+                <ul class="navbar-list">
+                    <li><a href="#What_is_Python" class="nav-link">What is Python</a></li>
+                    <li><a href="#Python_Syntax" class="nav-link">Python Syntax</a></li>
+                    <li><a href="#Python_Comments" class="nav-link">Python Comments</a></li>
+                    <li><a href="#Python_Variables" class="nav-link">Python Variables</a></li>
+                    <li><a href="#Python_Numbers" class="nav-link">Python Numbers</a></li>
+                </ul>
+            </nav>
+        </div>
+         <div class="content">
+            <section class="main-section" id="What_is_Python">
+                <header class="main-section_header">What is Python</header>
+                <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</p>
+                <p>It is used for:</p>
+                <ul class="main-section_list">
+                    <li>web development (server-side)</li>
+                    <li>software development</li>
+                    <li>mathematics</li>
+                    <li>system scripting</li>
+                </ul>
+                <h3>What can Python do?</h3>
+                <ul class="main-section_list">
+                    <li>Python can be used on a server to create web applications.</li>
+                    <li>Python can be used alongside software to create workflows.</li>
+                    <li>Python can connect to database systems. It can also read and modify files.</li>
+                    <li>Python can be used to handle big data and perform complex mathematics.</li>
+                    <li>Python can be used for rapid prototyping, or for production-ready software development.</li>
+                </ul>
+                <h3>Why Python?</h3>
+                <ul class="main-section_list"> 
+                    <li>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).</li>
+                    <li>ython has a simple syntax similar to the English language.</li>
+                    <li>Python has syntax that allows developers to write programs with fewer lines than some other programming languages.</li>
+                    <li>Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick.</li>
+                    <li>Python can be treated in a procedural way, an object-oriented way or a functional way.</li>
+                </ul>
+            </section>
+            <section class="main-section" id="Python_Syntax">
+                <header class="main-section_header">Python Syntax</header>
+                <p>Indentation refers to the spaces at the beginning of a code line.
+                    Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.
+                    Python uses indentation to indicate a block of code.</p>
+                    <code>
+                        if 5 > 2: <br>
+                        &nbsp print("Five is greater than two!")
+                    </code>
+                <p>Python will give you an error if you skip the indentation:</p>
+                    <code>
+                        if 5 > 2: <br>
+                        print("Five is greater than two!")
+                    </code>
+            <p>The number of spaces is up to you as a programmer, the most common use is four, but it has to be at least one.</p>
+
+            </section>
+            <section class="main-section" id="Python_Comments">
+                <header class="main-section_header">Python Comments</header>
+                <p>Comments starts with a <span class="spec-symbol">#</span>, and Python will ignore them:</p>
+                    <code>
+                        #This is a comment <br>
+                        print("Hello, World!") <br>
+                        print("Hello, World!") #This is a comment
+                    </code>
+                <p>Python does not really have a syntax for multi line comments.
+                    To add a multiline comment you could insert a <span class="spec-symbol">#</span> for each line.
+                    Or, not quite as intended, you can use a multiline string.
+                    Since Python will ignore string literals that are not assigned to a variable,
+                    you can add a multiline string (triple quotes) in your code, and place your comment inside it:
+                </p>
+                    <code>
+                        """  <br>
+                        This is a comment <br>
+                        written in <br>
+                        more than just one line <br>
+                        """ <br>
+                        print("Hello, World!")
+                    </code>
+                <p>As long as the string is not assigned to a variable,
+                    Python will read the code, but then ignore it, and you have made a multiline comment.
+                </p>
+            </section>
+            <section class="main-section" id="Python_Variables">
+                <header class="main-section_header">Python Variables </header>
+                <p>Python has no command for declaring a variable.
+                A variable is created the moment you first assign a value to it.</p>
+                    <code>
+                        x = 5 <br>
+                        y = "John" <br>
+                        print(x) <br>
+                        print(y)  
+                    </code>
+                <p>Variables do not need to be declared with any particular type, and can even change type after they have been set.</p>
+            </section>
+            <section class="main-section" id="Python_Numbers">
+                <header class="main-section_header">Python Numbers </header>
+                <p>There are three numeric types in Python:</p>
+                <ul class="main-section_list red">
+                    <li>int</li>
+                    <li>float</li>
+                    <li>complex</li>
+                </ul>
+                <p>Variables of numeric types are created when you assign a value to them:</p>
+                
+                    <code>
+                        x = 1    # int <br>
+                        y = 2.8  # float <br>
+                        z = 1j   # complex 
+                    </code>
+                
+                <p>To verify the type of any object in Python, use the <span class="spec-symbol">type()</span> function.</p>
+        </div>
+    </main>
+   
+    
+</body>
+</html>
